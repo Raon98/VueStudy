@@ -28,11 +28,7 @@
             </span>
       </div>
     </div>
-    <div class="bottom_text">
-      ※ 숙명창작소 장비 예약은 당일만 가능합니다.<br>
-      ※ 재료는 신청자가 직접 준비합니다.<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;(신도리코 정품 필라멘트, 스마트칩)
-    </div>
+    <div class="bottom_text" v-html="text"></div>
   </div>
 </template>
 
@@ -50,8 +46,10 @@ import 'dayjs/locale/ko'; dayjs.locale('ko');
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'printer',
+
   data() { //state라고 불림
     return {
+      text: '※ 숙명창작소 장비 예약은 당일만 가능합니다.<br>※ 재료는 신청자가 직접 준비합니다<br>&nbsp&nbsp&nbsp&nbsp (신도리코 정품 필라멘트, 스마트칩)',
       printer1:[
         {ptState1: state.사용가능, numbers1: 1},
         {ptState1: state.사용가능, numbers1: 2},
