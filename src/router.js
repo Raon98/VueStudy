@@ -7,6 +7,11 @@ const routes = [
         name: 'Home',
         component: () => import('@/views/printer'), // 동적 import
     },
+    {
+        path: '/Save',
+        name: 'Save',
+        component: () => import('@/views/SaveModal'), // 동적 import
+    },
 
 ];
 

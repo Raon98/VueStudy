@@ -1,6 +1,4 @@
-
 <template>
-
   <div class="black-bg" v-if="openModel == true">
     <div class="white-bg" >
       <h2>상세페이지</h2>
@@ -14,7 +12,7 @@
       <img src="@/assets/image1.jpg" class="main_img">
     </div>
     <div class="main_body">
-      <div class="center_name">3D프린터(3DWOX1)</div>
+      <div class="center_name">{{tdtext}}</div>
       <div>
             <span v-for="(printer1,i) in printer1" :key="i">
               <button  class="bt-size " :style="{background : printer1.ptState1}" @click="changecolor1(i)">{{printer1.numbers1}} </button>
@@ -27,13 +25,14 @@
               &nbsp;
             </span>
       </div>
+
     </div>
     <div class="bottom_text" v-html="text"></div>
+    <SavedModal v-show="showModal" @close-modal="showModal = false"/>
   </div>
 </template>
-
 <script>
-
+import SavedModal from '../views/SaveModal'
 
 const state = {
   사용가능 : '#AFE0FF',
@@ -41,14 +40,19 @@ const state = {
   사용불가:'#BDBDBD'
 }
 import dayjs from "dayjs";
-import 'dayjs/locale/ko'; dayjs.locale('ko');
+import 'dayjs/locale/ko';
+dayjs.locale('ko');
 
 export default {
+  components: { SavedModal },
+
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'printer',
 
   data() { //state라고 불림
     return {
+      showModal: false,
+      tdtext: '3D프린터(3DWOX1)' ,
       text: '※ 숙명창작소 장비 예약은 당일만 가능합니다.<br>※ 재료는 신청자가 직접 준비합니다<br>&nbsp&nbsp&nbsp&nbsp (신도리코 정품 필라멘트, 스마트칩)',
       printer1:[
         {ptState1: state.사용가능, numbers1: 1},
@@ -74,6 +78,7 @@ export default {
       switch (this.printer1[i].numbers1){
         case 1:
               console.log("페이지 이동")
+              this.showModal =true;
               break
         case 2:
               console.log("페이지 이동2")
