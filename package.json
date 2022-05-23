@@ -8,14 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@takuma-ru/vue-swipe-modal": "^3",
+    "@takuma-ru/vue-swipe-modal": "~2",
     "core-js": "^3.8.3",
     "dayjs": "^1.11.2",
     "vue": "^3.2.13",
     "vue-dayjs-plugin": "^1.0.0",
     "vue-moment": "^4.1.0",
     "vue-router": "^4.0.13",
-    "vue3-promise-dialog": "^0.3.4"
+    "vue3-promise-dialog": "^0.3.4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

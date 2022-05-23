@@ -12,6 +12,11 @@ const routes = [
         name: 'Save',
         component: () => import('@/views/SaveModal'), // 동적 import
     },
+    {
+        path: '/Confirm',
+        name: 'Confirm',
+        component: () => import('@/views/confirm'), // 동적 import
+    },
 
 ];
 
