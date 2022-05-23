@@ -15,7 +15,8 @@
     "vue-dayjs-plugin": "^1.0.0",
     "vue-moment": "^4.1.0",
     "vue-router": "^4.0.13",
-    "vue3-promise-dialog": "^0.3.4"
+    "vue3-promise-dialog": "^0.3.4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
