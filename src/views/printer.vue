@@ -43,6 +43,10 @@ import dayjs from "dayjs";
 import 'dayjs/locale/ko';
 dayjs.locale('ko');
 
+// eslint-disable-next-line no-unused-vars
+import { computed, onMounted, toRef } from "vue";
+import { useStore } from "vuex";
+
 export default {
   components: { SavedModal },
 
@@ -69,6 +73,20 @@ export default {
       openModel: false,
       today: dayjs().format("YYYY.MM.DD (ddd)")
     }
+  },
+  setup() {
+    const store = useStore();
+    // state는 namespaced 유무와 상관 없이 moduleName으로 쪼개서 들어간다.
+    const counter = computed(() => store.state.moduleA.counter);
+    const test = computed(() => store.getters.time2);
+
+    // namespaced 사용함으로 아래와 같이 [storeName/함수 이름]으로 부릅니다.
+    // eslint-disable-next-line no-unused-vars
+    const doubleCount = computed(() => store.getters["moduleA/doubleCount"]);
+    const inc = () => store.commit("setCounter", counter.value + 1);
+
+
+    return { inc, test };
   },
 
   methods: {

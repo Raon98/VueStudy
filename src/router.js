@@ -17,7 +17,11 @@ const routes = [
         name: 'Confirm',
         component: () => import('@/views/confirm'), // 동적 import
     },
-
+    {
+        path: '/watch',
+        name: 'Watch',
+        component: () => import('@/views/watchEffect'), // 동적 import
+    },
 ];
 
 // 이렇게 해도 된다.
