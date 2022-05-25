@@ -28,7 +28,7 @@
 //             await axios.get('api/test', current)
 //             console.log(response)
 //         })
-//     }, Promise.resolve())->  원래 첫번째 값은 undefined 이지만 promis 객체를 사용한다고 인식하게 만듬
+//     }, Promise.resolve())->  원래 첫번째 값은 undefined 이지만 promiss 객체를 사용한다고 인식하게 만듬
 //          첫 번째 반복: previous - Promise.resolve() / 1을 파라미터로 한 axios request 및 response를 포함한 결과
 //          두 번째 반복: previous - 첫 번쨰 반복 수행 결과 / 2를 파라미터로 한 axios request 및 response를 포함한 결과
 // }

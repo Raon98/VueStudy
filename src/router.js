@@ -22,6 +22,16 @@ const routes = [
         name: 'Watch',
         component: () => import('@/views/watchEffect'), // 동적 import
     },
+    {
+        path: '/audio',
+        name: 'Audio',
+        component: () => import('@/views/Audio'), // 동적 import
+    },
+    {
+        path: '/composable',
+        name: 'Composable',
+        component: () => import('@/views/composable'), // 동적 import
+    },
 ];
 
 // 이렇게 해도 된다.
