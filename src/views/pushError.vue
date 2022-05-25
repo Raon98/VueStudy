@@ -2,6 +2,7 @@
   <div>
  git push error
     re push
+    re push 2
   </div>
 </template>
 
