@@ -2,16 +2,21 @@ import dayjs from 'dayjs'
  import { createApp } from 'vue'
 import App from './App.vue'
 import { router } from './router'
-import store from "@/store/store";
+import  store  from "./store";
+import axios from "axios"
 
-
+axios.defaults.baseURL = 'http://localhost:8888'
 
 const app  = createApp(App)
 app.config.productionTip =false
 
-app.use(router)
-app.use(store)
-app.mount('#app')
+app.config.globalProperties.axios = axios
 app.config.globalProperties.$dayjs = dayjs
+app.config.globalProperties.$store = store
+app.config.globalProperties.foo = "bar";
+
+app.use(router).use(store)
+app.mount('#app')
+
 
 

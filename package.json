@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "@takuma-ru/vue-swipe-modal": "~2",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "dayjs": "^1.11.2",
+    "store": "^2.0.12",
     "vue": "^3.2.13",
     "vue-dayjs-plugin": "^1.0.0",
     "vue-moment": "^4.1.0",

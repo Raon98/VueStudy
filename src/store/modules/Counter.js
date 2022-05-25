@@ -6,8 +6,10 @@ export const Counter = {
         }
     },
     actions: {
-        test() {
-            console.log(4);
+        globalAction: {
+            handler({ commit }) {
+                commit("setCounter", 199);
+            }
         }
     },
     getters: {

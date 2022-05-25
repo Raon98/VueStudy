@@ -37,6 +37,22 @@ const routes = [
         name: 'computedEx',
         component: () => import('@/views/computedEx'), // 동적 import
     },
+    {
+        path: '/Composition',
+        name: 'Composition',
+        component: () => import('@/views/Composition'), // 동적 import
+    },
+    {
+        path: '/store',
+        name: 'store',
+        component: () => import('@/views/store'), // 동적 import
+    },
+    {
+        path: '/compositionEx',
+        name: 'compositionEx',
+        component: () => import('@/views/compositionEx'), // 동적 import
+    },
+
 ];
 
 // 이렇게 해도 된다.
