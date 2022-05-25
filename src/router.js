@@ -32,6 +32,11 @@ const routes = [
         name: 'Composable',
         component: () => import('@/views/composable'), // 동적 import
     },
+    {
+        path: '/computedEx',
+        name: 'computedEx',
+        component: () => import('@/views/computedEx'), // 동적 import
+    },
 ];
 
 // 이렇게 해도 된다.
