@@ -1,6 +1,7 @@
 <template>
   <div>
  git push error
+    re push
   </div>
 </template>
 
