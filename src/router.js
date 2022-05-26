@@ -52,7 +52,11 @@ const routes = [
         name: 'compositionEx',
         component: () => import('@/views/compositionEx'), // 동적 import
     },
-
+    {
+        path: '/refEx',
+        name: 'refEx',
+        component: () => import('@/views/refEx'), // 동적 import
+    },
 ];
 
 // 이렇게 해도 된다.
