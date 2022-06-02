@@ -17,7 +17,6 @@ export default {
     // return this.score++; 렌더링 될때만 실행됨
   },
   computed: { //캐싱하여 의존하는 값이 변하는경우 계속 실행함
-
     increase(){
       // eslint-disable-next-line no-undef
       return this.score +1

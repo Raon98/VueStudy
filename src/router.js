@@ -57,6 +57,11 @@ const routes = [
         name: 'refEx',
         component: () => import('@/views/refEx'), // 동적 import
     },
+    {
+        path: '/SwipeModel',
+        name: 'SwipeModel',
+        component: () => import('@/views/SwipeModel'), // 동적 import
+    },
 ];
 
 // 이렇게 해도 된다.
