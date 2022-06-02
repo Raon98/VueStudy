@@ -22,19 +22,19 @@ export default {
 
 <style scoped>
 .today {
-  margin: 50px auto;
+  margin: 25px auto;
   text-align: center;
 }
 
 .today p {
-  font-size: 70px;
+  font-size: 35px;
   line-height: 1;
 }
 
 div {
-  margin: 50px 0 0 0;
-  padding: 30px;
-  font-size: 40px;
+  margin: 25px 0 0 0;
+  padding: 15px;
+  font-size: 20px;
   font-weight: bold;
   color: #707070;
 }
