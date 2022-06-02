@@ -36,14 +36,16 @@ export default {
 .modal {
   text-align: center;
   background-color: white;
-  height: 500px;
+  height: 400px;
   width: 500px;
-  margin-top: 10%;
-  padding: 60px 0;
+  margin-top: 35%;
+  padding: 50px 0;
   border-radius: 20px;
+  margin-left: 25px;
 }
 .close {
-  margin: 10% 0 0 16px;
+  margin: 30% 0 5px 16px;
+
   cursor: pointer;
 }
 
@@ -58,12 +60,12 @@ export default {
 h6 {
   font-weight: 500;
   font-size: 28px;
-  margin: 20px 0;
+  margin: 0px 0;
 }
 
 p {
   font-size: 16px;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 button {
@@ -73,6 +75,6 @@ button {
   color: white;
   font-size: 14px;
   border-radius: 16px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 </style>
