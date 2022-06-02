@@ -16,8 +16,10 @@
     "vue": "^3.2.13",
     "vue-dayjs-plugin": "^1.0.0",
     "vue-moment": "^4.1.0",
+    "vue-number-animation": "^1.1.2",
     "vue-router": "^4.0.13",
     "vue3-promise-dialog": "^0.3.4",
+    "vuebar": "^0.0.20",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

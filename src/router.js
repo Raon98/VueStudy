@@ -62,6 +62,11 @@ const routes = [
         name: 'SwipeModel',
         component: () => import('@/views/SwipeModel'), // 동적 import
     },
+    {
+        path: '/VueNumber',
+        name: 'VueNumber',
+        component: () => import('@/views/VueNumber'), // 동적 import
+    },
 ];
 
 // 이렇게 해도 된다.
